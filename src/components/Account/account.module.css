@@ -1,0 +1,19 @@
+.sideBar ul li{
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sideBar ul li a{
+  opacity: .5;
+  font-size: 15px;
+}
+
+.sideBar ul li a[class='active']{
+  opacity: 1;
+  color: #DB4444;
+}
+/*------------------------ Address section -------------------- */
+.addressSec p{
+  margin: 0;
+  padding: 5px 11px;
+}

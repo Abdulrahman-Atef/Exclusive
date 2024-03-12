@@ -1,0 +1,20 @@
+.section1{
+  border-right: 1px solid rgb(0, 0, 0, .2);
+}
+@media (max-width:767px) {
+  .section1{
+    border-right: none;
+  }
+}
+.section1 li{
+  margin-bottom: 20px;
+  transition: transform .3s;
+}
+.section1 li:last-child{
+  margin-bottom: 0;
+}
+.section1 li:hover{
+  transform: translateX(7px);
+}
+/* ----------------- DownCount -------------------- */
+

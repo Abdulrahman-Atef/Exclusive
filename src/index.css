@@ -1,0 +1,265 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+.ff-inter{
+  font-family: 'Inter', sans-serif;;
+}
+a,a:hover{
+  color: #000;
+  text-decoration: none;
+}
+p{
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+.text1{
+  color: #FAFAFA;
+}
+.text2 {
+  color: #7D8184;
+}
+.text3 {
+  color: #000000;
+}
+.main-bg-black{
+  background-color: #000000;
+}
+.primary1{
+  background-color: #FFFFFF;
+}
+.primary2{
+  background-color: #363738;
+}
+.secondry1{
+  background-color: #F5F5F5;
+}
+.secondry2{
+  background-color: #FEFAF1;
+}
+.secondry3{
+  background-color: #DB4444;
+}
+.text-secondry3{
+  color: #DB4444;
+}
+.mainHover:hover{
+  color: #DB4444;
+}
+.button1{
+  background-color: #00FF66;
+}
+.button1-text{
+  color: #00FF66;
+}
+.button2{
+  background-color: #DB4444;
+}
+.button2:hover{
+  background-color: #E07575;
+}
+.bg-1{
+  background-color: #FFFFFF;
+}
+.navbar-bg{
+  transition: background-color .4s;
+  background-color: #f1f1f1;
+}
+.fs-12{
+  font-size: 12px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.ps-30{
+  padding-left: 30px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.my-80{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mainLs{
+  letter-spacing: 1.44px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+/*------------------------------------------------------------------------------------*/
+.MainParent{
+  padding-top: 62.8px;
+  min-height: 100vh;
+}
+.addToCart{
+  left: 0;
+  bottom: 0;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: .8s;
+}
+.addToCart:hover{
+  color:#FFFFFF ;
+  background-color: #363738;
+}
+.productCard:hover .addToCart{
+  transform: translateY(0);
+  opacity: 1;
+}
+.addCheckCard{
+  top: 3%;
+  right: 3%;
+}
+.homeHeaderBefore::before{
+  content: '';
+  width: 20px;
+  height: 40px;
+  display: block;
+  background-color: #DB4444;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* ----------------- productDetailsSlider --------------------------- */
+.productDetailsSlider .slick-slider{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  /* gap: 30px; */
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.productDetailsSlider .slick-dots{
+  position: static;
+  display: flex !important; 
+  flex-direction: column;
+  gap: 8px;
+  /* flex: 0 0 auto;
+  width: 80%;  */
+}
+.productDetailsSlider .slick-list{
+  gap: 10px;
+  flex: 0 0 auto;
+  width: 70%; 
+}
+.slick-dots li{
+  width: 100px;
+  height: 120px;
+}
+@media (max-width:600px) {
+  .slick-dots li{
+    width: 95px;
+    height: 110px;
+  }
+}
+.sizeCheckBox + div{
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 6px 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+  cursor: pointer;
+}
+.sizeCheckBox:checked + div{
+  color: white;
+  background: #DB4444;
+  border: 1px solid transparent;
+}
+/* ---------------- sign in_out inputs ----------------- */
+@media (max-width:767px) {
+  .loginImage{
+    display: none;
+  }
+}
+.sign_in_out_inputs{
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+  width: 100%;
+  padding: 7px 0;
+}
+.sign_in_out_inputs:focus{
+  outline: 0;
+}
+.sign_in_out_inputs::placeholder{
+  opacity: .4;
+  color: #000000;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+/* -----------------Loader ------------------------------------ */
+.MainLoader {
+  height: 50px;
+  width: max-content;
+  font-weight: 600;
+  font-family: monospace;
+  letter-spacing: .3em;
+  color: #f5f5f5;
+  filter: drop-shadow(0 0 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MainLoader span {
+  animation: loading6454 1.75s ease infinite;
+}
+
+.MainLoader span:nth-child(2) {
+animation-delay: 0.25s;
+}
+
+.MainLoader span:nth-child(3) {
+animation-delay: 0.5s;
+}
+
+.MainLoader span:nth-child(4) {
+animation-delay: 0.75s;
+}
+
+.MainLoader span:nth-child(5) {
+animation-delay: 1s;
+}
+
+.MainLoader span:nth-child(6) {
+animation-delay: 1.25s;
+}
+
+.MainLoader span:nth-child(7) {
+animation-delay: 1.5s;
+}
+@keyframes loading6454 {
+0%, 100% {
+  transform: translateY(0);
+}
+
+50% {
+  transform: translateY(-10px);
+}
+}
+/* -------------- LogoColor ------------------- */
+@keyframes animate8345 {
+  0%,100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+.LogoColor {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to right, #2d60ec, #3ccfda);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate8345 9s linear infinite;
+  font-weight: bold;
+}

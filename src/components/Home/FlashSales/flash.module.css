@@ -1,0 +1,11 @@
+
+.flash{
+  margin-top: 120px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+/* ---------------------- */
+.time div{
+  line-height: 25px;
+}

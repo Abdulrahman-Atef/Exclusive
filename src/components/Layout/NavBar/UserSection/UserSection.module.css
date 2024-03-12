@@ -1,0 +1,36 @@
+.list{
+  border-radius: 50%;
+  transition: .4s;
+}
+.list:hover{
+  background-color: var(--bs-gray-200);
+  border-radius: 50%;
+}
+.list{
+  position: relative;
+}
+.list ul{
+  width: 224px;
+  height: 180px;
+  top: 37px;
+  right: 0;
+  z-index: 666;
+  position: absolute;
+  padding: 10px 12px 0px 18px;
+  border-radius: 4px;
+  background: rgb(219 68 68 / 83%);
+  backdrop-filter: blur(75px);
+}
+.list ul li{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.list ul li:not(:last-child){
+  margin-bottom: 20px;
+}
+.list ul a{
+  color: white !important;
+  flex: 1;
+}
