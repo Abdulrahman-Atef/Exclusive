@@ -25,7 +25,7 @@ export let createOnlineOrder = createAsyncThunk('ordersSlice/createOnlineOrder',
       token:localStorage.getItem('userToken')
     }
 
-    return axios.post(`${BaseUrl}/api/v1/orders/checkout-session/${cartId}?url=${encodeURIComponent('https://abdo-tech.me/Exclusive/#')}`, {
+    return axios.post(`${BaseUrl}/api/v1/orders/checkout-session/${cartId}?url=${encodeURIComponent('https://exclusive-store1.vercel.app')}`, {
       shippingAddress: values
     } , {headers})
     .then((res)=> res)
