@@ -70,7 +70,9 @@ export default function NavBar() {
         </li>
         {userToken? <UserSection />
         :
-        <Link to={'/login'} className='btn btn-outline-dark d-flex align-items-center p-1 px-2'>Login<i className="bi bi-person ms-1"></i></Link>
+        <li>
+          <Link to={'/login'} className='btn btn-outline-dark d-flex align-items-center p-1 px-2'>Login<i className="bi bi-person ms-1"></i></Link>
+        </li>
         }
       </ul>
     </div>

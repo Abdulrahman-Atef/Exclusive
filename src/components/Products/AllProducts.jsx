@@ -33,8 +33,10 @@ export default function AllProducts() {
 }
 
 async function handleAddToWishList(productId) {
-  const {payload} = await dispatch(addToWishList(productId))
-  dispatch(setwishListIds(payload.data))
+  if (userToken) {
+    const {payload} = await dispatch(addToWishList(productId))
+    dispatch(setwishListIds(payload.data))
+  }
 }
 
   let {isLoading, data} = useQuery({

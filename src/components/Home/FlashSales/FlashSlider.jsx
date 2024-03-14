@@ -26,11 +26,8 @@ export default function FlashSlider() {
 
   async function handleAddToWishList(productId) {
     if (userToken) {
-    const {payload} = await dispatch(addToWishList(productId))
-    dispatch(setwishListIds(payload.data))
-    }
-    else{
-      console.log('You have To Login First');
+      const {payload} = await dispatch(addToWishList(productId))
+      dispatch(setwishListIds(payload.data))
     }
   }
 
